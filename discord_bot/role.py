@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import discord
 import os
 import csv
@@ -24,3 +25,18 @@ def role_add(User_name):
                 return role_1
         i += 1
     pass
+=======
+import discord
+
+role_1 = 1122714200230330429 # 一年生のロールID
+
+
+def role_add(Member_ID):
+    # 用意したIDから Role オブジェクトを取得
+    role = Member_ID.guild.get_role(role_1)
+
+    # 入ってきた Member に役職を付与
+    Member_ID.add_roles(role)
+
+    return 0
+>>>>>>> 6a1849acc96c2e75fbc5192890ed6479baa99448
